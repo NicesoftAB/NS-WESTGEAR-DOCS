@@ -1,0 +1,44 @@
+# Decap CMS config for editing Docusaurus markdown docs.
+# This lives at `/admin/config.yml` and the UI at `/admin/`.
+
+# If you want local editing (writes to your local git checkout), enable local_backend
+# and run a local proxy server (see README note below).
+# local_backend: true
+
+backend:
+  # Pick ONE backend.
+  #
+  # Option A (recommended for "edit in browser and commit to Git"):
+  # Deploy on Netlify and use GitHub auth as described here:
+  # https://decapcms.org/docs/github-backend/
+  name: github
+  repo: NicesoftAB/NS-WESTGEAR-DOCS
+  branch: main
+  # use_graphql: true
+
+  # Option B (if you use Netlify Identity + Git Gateway):
+  # name: git-gateway
+  # branch: main
+
+# Optional but nice to have
+publish_mode: simple
+
+media_folder: "docs-site/static/img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "docs"
+    label: "Dokumentation"
+    label_singular: "Dokument"
+    folder: "docs-site/docs"
+    nested:
+      depth: 5
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{dirname}} / {{title}}"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Innehåll", name: "body", widget: "markdown" }
