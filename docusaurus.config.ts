@@ -41,7 +41,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: undefined,
+          editUrl:
+            "https://github.com/NicesoftAB/NS-WESTGEAR-DOCS/edit/main/docs-site/",
         },
         blog: {
           showReadingTime: true,

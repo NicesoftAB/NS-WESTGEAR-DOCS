@@ -7,7 +7,7 @@ title: Katalog & sök
 
 - Skalbar produktkatalog med hierarkiska kategorier och underkategorier.
 - Stöd för varianter (storlek, färg, motortyp, specifikationer).
-- Stöd för rich media: bilder, video, manualer.
+- Stöd för rich media: bilder, video, manualer med mediabibliotek.
 - Filtrering på tillverkare/varumärke.
 - Kompatibilitetskontroller för tillbehör/reservdelar.
 - Lagersynk med Sharespine och leverantörer (realtid).
