@@ -82,7 +82,6 @@ const config: Config = {
           position: "left",
           label: "Dokumentation",
         },
-        { to: "/blog", label: "Nyheter", position: "left" },
       ],
     },
     footer: {
