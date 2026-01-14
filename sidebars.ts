@@ -24,6 +24,7 @@ const sidebars: SidebarsConfig = {
       label: "Projekt",
       items: [
         "projekt/arkitektur",
+        "projekt/tidsestimering",
         "projekt/integrationer",
         "projekt/datamodell",
         "projekt/icke-funktionella-krav",
